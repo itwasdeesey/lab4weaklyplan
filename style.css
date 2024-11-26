@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+.weekly-planner {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 20px;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+    .header h1 {
+        font-size: 2em;
+        font-weight: bold;
+        color: #00897b;
+    }
+
+.week-of,
+.habit {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+    .week-of label,
+    .habit label {
+        font-weight: bold;
+        color: #004d40;
+    }
+
+.input-field {
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    padding: 8px;
+    width: 200px;
+    font-size: 1em;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #80cbc4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+    .left-column h2 {
+        margin-bottom: 10px;
+        color: #004d40;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+input[type="checkbox"] {
+    accent-color: #004d40;
+    margin-right: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.day {
+    background: #e0f2f1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+textarea.input-field {
+    border: 2px solid #004d40;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    resize: vertical;
+    color: #333;
+    background: #ffffff;
+}
+
+.day h3 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.weekend {
+    grid-column: auto; 
+    grid-template-rows: repeat(
+    );
